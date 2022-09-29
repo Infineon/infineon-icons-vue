@@ -12,7 +12,7 @@
     ".": {
       "import": "./dist/infineon-icons-vue.js",
       "require": "./dist/infineon-icons-vue.umd.cjs"
-    },
+    }
   },
   "keywords": [
     "vue3",
@@ -28,19 +28,19 @@
   "author": "Kai Werther",
   "license": "MIT",
   "dependencies": {
-    "@infineon/infineon-icons": "^0.1.0",
+    "@infineon/infineon-icons": "^0.2.2",
     "vue": "^3.2.39"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.1.0",
     "@vue/compiler-sfc": "^3.2.39",
+    "auto": "^10.37.4",
     "eslint": "^7.28.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-vue": "^9.1.1",
-    "vite": "^3.1.1",
-    "auto": "^10.37.4"
+    "vite": "^3.1.1"
   },
   "auto": {
     "plugins": [

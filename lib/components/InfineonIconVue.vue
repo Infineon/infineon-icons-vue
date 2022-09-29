@@ -10,7 +10,7 @@
 </template>
 
 <script setup>
-import library from '@infineon/infineon-icons/library';
+import library from '@infineon/infineon-icons';
 
 import {
   toRefs, computed,
