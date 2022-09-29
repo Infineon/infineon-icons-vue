@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "type": "module",
   "files": [
-    "lib"
+    "dist"
   ],
-  "main": "./lib/index.js",
+  "main": "./dist/infineon-icons-vue.js",
   "keywords": [
     "vue3",
     "infineon",
@@ -32,7 +32,11 @@
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-vue": "^9.1.1",
-    "vite": "^3.1.1"
+    "vite": "^3.1.1",
+    "vite-plugin-externalize-deps": "^0.1.5"
+  },
+  "peerDependencies": {
+    "@infineon/infineon-icons": "^0.2.2"
   },
   "auto": {
     "plugins": [
