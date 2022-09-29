@@ -3,16 +3,9 @@
   "version": "0.1.0",
   "type": "module",
   "files": [
-    "dist"
+    "lib"
   ],
-  "main": "./dist/infineon-icons-vue.umd.cjs",
-  "module": "./dist/infineon-icons-vue.js",
-  "exports": {
-    ".": {
-      "import": "./dist/infineon-icons-vue.js",
-      "require": "./dist/infineon-icons-vue.umd.cjs"
-    }
-  },
+  "main": "./lib/index.js",
   "keywords": [
     "vue3",
     "infineon",
