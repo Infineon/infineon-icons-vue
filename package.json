@@ -1,19 +1,11 @@
 {
   "name": "@infineon/infineon-icons-vue",
   "version": "0.1.0",
-  "private": true,
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "./dist/infineon-icons-vue.umd.cjs",
-  "module": "./dist/infineon-icons-vue.js",
-  "exports": {
-    ".": {
-      "import": "./dist/infineon-icons-vue.js",
-      "require": "./dist/infineon-icons-vue.umd.cjs"
-    },
-  },
+  "main": "./dist/infineon-icons-vue.js",
   "keywords": [
     "vue3",
     "infineon",
@@ -28,19 +20,23 @@
   "author": "Kai Werther",
   "license": "MIT",
   "dependencies": {
-    "@infineon/infineon-icons": "^0.1.0",
+    "@infineon/infineon-icons": "^0.2.2",
     "vue": "^3.2.39"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.1.0",
     "@vue/compiler-sfc": "^3.2.39",
+    "auto": "^10.37.4",
     "eslint": "^7.28.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-vue": "^9.1.1",
     "vite": "^3.1.1",
-    "auto": "^10.37.4"
+    "vite-plugin-externalize-deps": "^0.1.5"
+  },
+  "peerDependencies": {
+    "@infineon/infineon-icons": "^0.2.2"
   },
   "auto": {
     "plugins": [

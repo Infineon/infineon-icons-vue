@@ -31,7 +31,9 @@ jobs:
           registry-url: https://npm.pkg.github.com/
 
       - run: npm ci
-      - run: npm run build
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GH_TOKEN }}
+      - run: npm run build:lib
       - run: auto shipit
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GH_TOKEN }}
