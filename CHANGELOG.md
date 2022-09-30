@@ -1,3 +1,15 @@
+# v0.1.2 (Fri Sep 30 2022)
+
+#### 🐛 Bug Fix
+
+- added examples + deployment to gibhub pages [#3](https://github.com/Infineon/infineon-icons-vue/pull/3) ([@kaiwerther](https://github.com/kaiwerther))
+
+#### Authors: 1
+
+- Kai Werther ([@kaiwerther](https://github.com/kaiwerther))
+
+---
+
 # v0.1.1 (Thu Sep 29 2022)
 
 #### 🐛 Bug Fix
