@@ -2,6 +2,14 @@
   "name": "@infineon/infineon-icons-vue",
   "version": "0.1.1",
   "type": "module",
+  "homepage": "https://github.com/Infineon/Infineon-Icons-Vue#readme",
+  "bugs": {
+    "url": "https://github.com/Infineon/Infineon-Icons-Vue/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Infineon/Infineon-Icons-Vue.git"
+  },
   "files": [
     "dist"
   ],
