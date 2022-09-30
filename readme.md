@@ -9,23 +9,25 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/infineon/infineon-icons-vue">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">infineon-icons-vue</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    Vue component to easily display Icons from Infineons Icon Library
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/infineon/infineon-icons-vue"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://infineon.github.io/infineon-icons-vue">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/infineon/infineon-icons-vue/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/infineon/infineon-icons-vue/issues">Request Feature</a>
+    .
+    <a href="https://github.com/infineon/infineon-icons/issues">Request Icons</a>
   </p>
 </div>
 
@@ -42,22 +44,28 @@
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#getting-access-to-infineons-github-repository">Getting Access to Infineons Github Repository</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#creating-github-account">Creating GitHub Account</a></li>
+        <li><a href="#create-configure-pat">Create + Configure PAT</a></li>
+      </ul>
+    </li>
+    <li><a href="#project-configuration">Project configuration</a></li>
+    <li>
+      <a href="#installation">Installation</a>
+      <ul>
+        <li><a href="#install-packages">Install packages</a></li>
+        <li><a href="#import-component">Import Component</a></li>
+        <li><a href="#create-icon-library">Create Icon library</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
+    <li><a href="#requesting-new-icons">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
-
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -66,7 +74,7 @@
   <img src="https://github.com/Infineon/infineon-icons-vue/blob/master/images/screenshot.png?raw=true" alt="Screenshot">
 </a>
 
-Component to be used with Vue3 to easily include Infineons icon library. This library supports treeshaking out of the box.
+Component to be used with Vue3 to easily include Infineons Icon Library. This library supports treeshaking out of the box. Uses <a href="https://github.com/infineon/infineon-icons">Infineons Icon Library</a>.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -80,10 +88,11 @@ Component to be used with Vue3 to easily include Infineons icon library. This li
 
 
 <!-- GETTING STARTED -->
-## Getting Access
+## Getting Access to Infineons Github Repository
 
 ### Creating GitHub Account
 In order to access the npm packages that are available at github you need to create an github account and contact out github admins (Yushev Artem) to be added to the Infineon Company.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Create + Configure PAT
 1. Create PAT
@@ -94,29 +103,40 @@ In order to access the npm packages that are available at github you need to cre
 	Click on Configure SSO
 	Click on Authorize
 
-3. Set global npm config for your pc
-	npm config set '//npm.pkg.github.com/:_authToken' '<yourPAThere>'
 
-### Project configuration
+3. Set global npm config for your pc
+```sh
+npm config set '//npm.pkg.github.com/:_authToken' '<yourPAThere>'
+```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Project configuration
 1. add a file .npmrc to your project root. It should contain 
  ```@infineon:registry=https://npm.pkg.github.com/ ```
   It is considered best practice to keep package configuration on project level (+ check in your source control system).
   Access configuration should never be in your source control system and thus are configured on a global PC level
 
-### Installation
-4. install packages
+## Installation
+### Install Packages
 ```sh
 npm i -S @infineon/infineon-icons
 npm i -S @infineon/infineon-icons-vue
 ```
 
-5. import & register component globally in main.js
+### Import Component
+Either globally for your whole application in your main.js
 ```js
 import { InfineonIconVue } from '@infineon/infineon-icons-vue';
 app.component('InfineonIconVue', InfineonIconVue);
  ```
+Or individually for each component in your components script tag
+```js
+<script setup>
+import { InfineonIconVue } from '@infineon/infineon-icons-vue';
+</script>
+```
 
-6. create icon library
+### Create Icon Library
 create file ./src/plugins/infineonIcons.js
 ```js
 import library from '@infineon/infineon-icons/library';
@@ -141,7 +161,7 @@ import './plugins/infineonIcons'
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use the icon componen in any template. The icon has to be a string matching the icon name in your library.
+Use the icon component in any template. The icon has to be a string matching the icon name in your library.
 The name can be the original file name from figma or camelCase.
 
 ```html
@@ -157,7 +177,6 @@ The name can be the original file name from figma or camelCase.
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -167,6 +186,13 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Requesting new Icons
+
+If you need new icons that are currently not in our icon library please create an issue in our infineon-icons project <a href="https://github.com/infineon/infineon-icons/issues">here</a>.
+
+If you already have an SVG-Icon you can always just place it in the svg folder at <a href="https://github.com/infineon/infineon-icons/issues">our infineon-icons project</a> and create a pull request.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- LICENSE -->
@@ -181,7 +207,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
+Benedikt Kämmerer - Benedikt.Kaemmerer@infineon.com
 Kai Werther - kai.werther@infineon.com
+Verena Lechner - verena.lechner@infineon.com
 
 Project Link: [https://github.com/infineon/infineon-icons-vue](https://github.com/infineon/infineon-icons-vue)
 
