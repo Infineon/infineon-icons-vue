@@ -1,3 +1,15 @@
+# v0.1.4 (Tue Oct 04 2022)
+
+#### 🐛 Bug Fix
+
+- 5 write readme [#6](https://github.com/Infineon/infineon-icons-vue/pull/6) ([@kaiwerther](https://github.com/kaiwerther))
+
+#### Authors: 1
+
+- Kai Werther ([@kaiwerther](https://github.com/kaiwerther))
+
+---
+
 # v0.1.3 (Fri Sep 30 2022)
 
 #### 🐛 Bug Fix
