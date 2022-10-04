@@ -10,7 +10,7 @@
   <h3 align="center">infineon-icons-vue</h3>
 
   <p align="center">
-    Vue component to easily display Icons from Infineons Icon Library
+    Vue component to easily display Icons from <a href="https://github.com/infineon/infineon-icons">Infineons Icon Library</a>
     <br />
     <a href="https://github.com/infineon/infineon-icons-vue"><strong>Explore the docs »</strong></a>
     <br />
@@ -20,7 +20,7 @@
     <a href="https://github.com/infineon/infineon-icons-vue/issues">Report Bug</a>
     ·
     <a href="https://github.com/infineon/infineon-icons-vue/issues">Request Feature</a>
-    .
+    ·
     <a href="https://github.com/infineon/infineon-icons/issues">Request Icons</a>
   </p>
 </div>
