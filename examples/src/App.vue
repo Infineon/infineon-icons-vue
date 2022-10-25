@@ -14,7 +14,7 @@
         />
       </div>
       <div>
-        <code>name: <b>{{ icon.name }}</b> // <b>{{ icon.alternativeName }}</b><br>
+        <code>Name: <b>{{ icon.name }}</b> // <b>{{ icon.alternativeName }}</b><br>
           <b>&lt;infineon-icon-vue icon="{{ icon.name }}"&gt;</b></code>
       </div>
     </div>
