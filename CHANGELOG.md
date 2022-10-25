@@ -1,3 +1,15 @@
+# v0.1.5 (Tue Oct 25 2022)
+
+#### 🐛 Bug Fix
+
+- Changed spelling of demo page [#7](https://github.com/Infineon/infineon-icons-vue/pull/7) ([@benedikt-ifx](https://github.com/benedikt-ifx))
+
+#### Authors: 1
+
+- Benedikt Kaemmerer ([@benedikt-ifx](https://github.com/benedikt-ifx))
+
+---
+
 # v0.1.4 (Tue Oct 04 2022)
 
 #### 🐛 Bug Fix
