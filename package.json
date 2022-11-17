@@ -28,7 +28,7 @@
   "author": "Kai Werther",
   "license": "MIT",
   "dependencies": {
-    "@infineon/infineon-icons": "^0.2.3--canary.7.5fa9bdfcf5ee9f2f9e7b3145982c550f2a1736c7.0",
+    "@infineon/infineon-icons": "^1.0.0",
     "vue": "^3.2.39"
   },
   "devDependencies": {

@@ -65,7 +65,7 @@
 ## About The Project
 
 <a href="https://github.com/Infineon/infineon-icons-vue">
-  <img src="https://github.com/Infineon/infineon-icons-vue/blob/master/images/screenshot.png?raw=true" alt="Screenshot">
+  <img src="https://github.com/Infineon/infineon-icons-vue/blob/master/images/screenshot-icons.png?raw=true" alt="Screenshot-Icons">
 </a>
 
 Component to be used with Vue3 to easily include Infineons Icon Library. This library supports treeshaking out of the box. Uses <a href="https://github.com/infineon/infineon-icons">Infineons Icon Library</a>.
@@ -75,7 +75,7 @@ Component to be used with Vue3 to easily include Infineons Icon Library. This li
 
 
 ### Built With
-[![Vue][Vue.js]][Vue-url]
+[![Vue][Vue.js]][Vue-url]image.png
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -136,13 +136,13 @@ create file ./src/plugins/infineonIcons.js
 import library from '@infineon/infineon-icons/library';
 
 import {
-	cCheck12,
-	cart12,
+	cCheck16,
+	cart16,
 } from '@infineon/infineon-icons';
 
 library.add(
-	cCheck12,
-	cart12,
+	cCheck16,
+	cart16,
 );
 ```
   import this file in your main.js
@@ -159,8 +159,8 @@ Use the icon component in any template. The icon has to be a string matching the
 The name can be the original file name from figma or camelCase.
 
 ```html
-<infineon-icon-vue icon="cCheck12" />
-<infineon-icon-vue icon="c-check-12" />
+<infineon-icon-vue icon="cCheck16" />
+<infineon-icon-vue icon="c-check-16" />
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
