@@ -1,3 +1,15 @@
+# v0.1.6 (Thu Nov 17 2022)
+
+#### ⚠️ Pushed to `master`
+
+- Add files via upload ([@verena-ifx](https://github.com/verena-ifx))
+
+#### Authors: 1
+
+- [@verena-ifx](https://github.com/verena-ifx)
+
+---
+
 # v0.1.5 (Tue Oct 25 2022)
 
 #### 🐛 Bug Fix
