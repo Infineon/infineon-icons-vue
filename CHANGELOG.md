@@ -1,3 +1,16 @@
+# v0.1.7 (Thu Nov 17 2022)
+
+#### 🐛 Bug Fix
+
+- updated dependencies + readme [#9](https://github.com/Infineon/infineon-icons-vue/pull/9) (lechneve@ISCN5CG1201S7M.infineon.com [@verena-ifx](https://github.com/verena-ifx))
+
+#### Authors: 2
+
+- [@verena-ifx](https://github.com/verena-ifx)
+- Verena Lechner (lechneve@ISCN5CG1201S7M.infineon.com)
+
+---
+
 # v0.1.6 (Thu Nov 17 2022)
 
 #### ⚠️ Pushed to `master`
